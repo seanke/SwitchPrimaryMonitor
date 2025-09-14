@@ -20,3 +20,9 @@ else()
 endif()
 
 target_link_libraries(SwitchPrimaryMonitor PRIVATE user32 gdi32)
+
+# Installation layout (for packaging/CI)
+install(TARGETS SwitchPrimaryMonitor
+        RUNTIME DESTINATION bin)
+install(FILES README.md
+        DESTINATION .)

@@ -19,6 +19,13 @@ cmake --build build --config Release
 The executable will be at:
 `build/Release/SwitchPrimaryMonitor.exe` (multi-config) or `build/SwitchPrimaryMonitor.exe` (single-config generators).
 
+## CI / Releases
+
+- GitHub Actions builds on pushes and PRs to `main`.
+- Creating a tag like `v1.0.0` triggers a release with a ZIP containing the EXE and README.
+
+Badge: `Actions -> build` in this repo shows status.
+
 ## Usage
 
 Run from an elevated or normal command prompt (no elevation required):
@@ -45,4 +52,3 @@ Exit codes:
 - Uses `EnumDisplayDevicesW` and `ChangeDisplaySettingsExW` with `CDS_SET_PRIMARY` and `DM_POSITION`.
 - Skips mirroring drivers and only considers displays attached to the desktop.
 - If only one monitor is attached, it exits without changes.
-
