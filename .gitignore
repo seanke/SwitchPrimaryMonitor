@@ -1,0 +1,66 @@
+# General
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build directories
+/build/
+build*/
+/out/
+/bin/
+/obj/
+/lib/
+/dist/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Testing/
+Makefile
+compile_commands.json
+
+# Ninja
+*.ninja
+.ninja_deps
+.ninja_log
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.vcxproj.ide
+*.user
+*.opendb
+*.VC.db
+ipch/
+
+# MSVC outputs
+*.obj
+*.idb
+*.pdb
+*.ilk
+*.tlog
+*.lastbuildstate
+*.cache
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+x64/
+x86/
+ARM*/
+
+# VS Code (optional)
+.vscode/
+
